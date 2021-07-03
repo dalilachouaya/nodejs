@@ -11,7 +11,6 @@ function printResults() {
     }
 
 }
-
 function httpGet(index) {
     http.get(process.argv[2 + index], function (response) {
         response.pipe(bl(function (err, data) {
@@ -35,8 +34,7 @@ for (var i = 0; i < 3; i++) {
 }
 
 
-/*
-
+/* solution.js_ :
     'use strict'
     const http = require('http')
     const bl = require('bl')

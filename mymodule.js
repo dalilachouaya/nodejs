@@ -44,3 +44,27 @@ module.exports = function (dir, ext, callback) {
         callback(null, files);
     });
 };
+
+/*
+_C:\Users\Dalila\AppData\Roaming\npm\node_modules\learnyounode\exercises\m
+ ake_it_modular\solution\solution_filter.js_ :
+
+
+    'use strict'
+    const fs = require('fs')
+    const path = require('path')
+
+    module.exports = function (dir, filterStr, callback) {
+      fs.readdir(dir, function (err, list) {
+        if (err) {
+          return callback(err)
+        }
+
+        list = list.filter(function (file) {
+          return path.extname(file) === '.' + filterStr
+        })
+
+        callback(null, list)
+      })
+    }
+    */

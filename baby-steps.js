@@ -8,8 +8,6 @@ const sum = (num) => {
     for(let i = 2; i < num.length; i++){
         result += parseInt(num[i]);
     }
-
-
     return result;
 }
 

@@ -1,4 +1,4 @@
-//Remember to do data.toString () to convert the Buffer from Node to String.
+//Remember : data.toString () to convert the Buffer from Node to String.
 const http = require('http');
 //const hyperquest = require('hyperquest');
 const bl = require('bl');
@@ -37,11 +37,10 @@ http.get(process.argv[2], function (response) {
 });
 */
 
-/*
+/*solution.js_ :
  'use strict'
     const http = require('http')
     const bl = require('bl')
-
     http.get(process.argv[2], function (response) {
       response.pipe(bl(function (err, data) {
         if (err) {
